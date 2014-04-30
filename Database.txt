@@ -1,0 +1,139 @@
+create table admin
+(
+username varchar(10),
+password varchar(10)
+);
+
+insert into admin values('admin','admin');
+
+create table staff
+(
+username varchar(10),
+password varchar(10)
+);
+
+insert into staff values('staff','staff');
+
+************************************************
+
+create table fir
+(
+FIR_ID integer(5) NOT NULL auto_increment,
+police_station varchar(15),
+taluk varchar(10),
+distict varchar(10),
+crime_no integer(5),
+type_of_case varchar(15),
+date date,
+section integer,
+act integer,
+occurance_of_offence_day date,
+time varchar(10),
+Information_received_at_the_ps varchar(20),
+reason_for_delay varchar(20),
+place_of_occurance varchar(10),
+distance_from_ps varchar(10),
+PRIMARY KEY(FIR_ID)
+);
+
+
+create table complainant
+(
+complainant_id integer,
+name varchar(10),
+middle_name varchar(10),
+last_name varchar(10),
+age integer,
+occupation varchar(15),
+caste varchar(10),
+nationality varchar(10),
+address varchar(30),
+primary key(complainant_id)
+);
+
+
+create table criminal
+(
+first_name varchar(10),
+middle_name varchar(10),
+last_name varchar(10),
+date_of_birth date,
+age integer,
+gender varchar(5),
+nationality varchar(10),
+category varchar(10),
+line1 varchar(10),
+line2  varchar(10),
+line3  varchar(10),
+district varchar(10),
+state varchar(20),
+pincode integer,
+phone_no1 integer,
+phone_no2 integer,
+mobile integer,
+email varchar(20)
+);
+
+create table add_staff
+(
+staff_id integer NOT NULL auto_increment,
+first_name varchar(10),
+middle_name varchar(10),
+last_name varchar(10),
+date_of_joining_department date,
+date_of_joining_police_station date,
+caste varchar(10),
+designation varchar(10),
+experience integer,
+line1 varchar(20),
+line2 varchar(20),
+line3 varchar(20),
+district varchar(10),
+state varchar(10),
+pincode integer,
+phone_no1 integer,
+phone_no2 integer,
+mobile integer,
+blood_group varchar(5),
+line11 varchar(10),
+line22 varchar(10),
+line33 varchar(10),
+district1 varchar(10),
+state1 varchar(10),
+pincode1 integer,
+phone_no11 integer,
+phone_no22 integer,
+mobile1 integer,
+primary key(staff_id)
+);
+
+
+
+create table image_data
+(
+name varchar(10),
+login_id varchar(10),
+password varchar(10),
+image_type varchar(20),
+image_width integer,
+image_height integer,
+image_data blob
+);
+
+create table complaint
+(
+complaint_id integer,
+type_of_case varchar(15),
+complaint_against varchar(15),
+description varchar(50),
+primary key(complaint_id)
+);
+
+create table duty_allocation
+(
+first_name varchar(10),
+area varchar(20),
+date date,
+time_from varchar(10),
+time_to varchar(10)
+);

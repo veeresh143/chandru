@@ -1,0 +1,54 @@
+.chromestyle {
+	FONT-WEIGHT: bold; WIDTH: 100%
+}
+.chromestyle:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.chromestyle UL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: #45738a; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 3px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.chromestyle UL LI {
+	DISPLAY: inline
+}
+.chromestyle UL LI A {
+	COLOR: #ffffff; BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0px; FONT: bold 11px Verdana; PADDING-TOP: 3px; TEXT-DECORATION: none
+}
+.chromestyle UL LI A:hover {
+	BACKGROUND: #5289a4; COLOR: #ffffff
+}
+.chromestyle UL LI A.selected {
+	BACKGROUND: #5289a4; COLOR: #ffffff
+}
+.dropmenudiv 
+{
+	COLOR: #ffffff;
+        BORDER-RIGHT: #5289a4 1px solid; 
+        BORDER-TOP: #5289a4 1px solid; 
+        Z-INDEX: 100; 
+        FILTER: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=0); 
+        VISIBILITY: hidden; 
+        FONT: 11px Verdana; 
+        BORDER-LEFT: #5289a4 1px solid; 
+        WIDTH: 200px; 
+        BORDER-BOTTOM: #5289a4 1px solid; 
+        POSITION: absolute; TOP: 0px; 
+        BACKGROUND-COLOR: #5289a4
+}
+.dropmenudiv A
+{
+	COLOR: #ffffff; 
+        PADDING-RIGHT: 0px; 
+        DISPLAY: block; PADDING-LEFT: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; WIDTH: auto; TEXT-INDENT: 5px; PADDING-TOP: 3px; BORDER-BOTTOM: #fff 1px solid; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+* HTML .dropmenudiv A 
+{
+	WIDTH: 100%
+}
+.dropmenudiv A:hover
+{
+        FONT-WEIGHT: bold; 
+        COLOR: #ffffff; 
+        FONT-FAMILY: Verdana; 
+        BACKGROUND-COLOR: #36596b;
+        TEXT-DECORATION: none
+}
